@@ -1,7 +1,9 @@
-from typing import Dict, Optional
+from typing import Any, Dict, List, Optional
 
 from fastapi import FastAPI, Query
+from hyperborea3.monsters import get_all_monsters
 from hyperborea3.player_character import PlayerCharacter
+from hyperborea3.spells import get_all_spells, get_spell
 import rpg_tools.tiny_dungeon.char as td_char
 import rpg_tools.gamma5.char as gamma5_char
 import rpg_tools.maze_rats.char as maze_rats_char
@@ -46,6 +48,21 @@ async def specific_class(
         ac_type=ac_type,
     )
     return pc.to_dict()
+
+
+@app.get("/hyperborea3/spells/all")
+async def hyperborea_spells() -> List[Dict[str, Any]]:
+    return get_all_spells()
+
+
+@app.get("/hyperborea3/spells/{spell_id}")
+async def hyperborea_spell(spell_id: int) -> Dict:
+    return get_spell(spell_id)
+
+
+@app.get("/hyperborea3/monsters/all")
+async def hyperborea_monsters() -> List[Dict[str, Any]]:
+    return get_all_monsters()
 
 
 # ~~~ rpg_tools ~~~
