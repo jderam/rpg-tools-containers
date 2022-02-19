@@ -1,6 +1,7 @@
 from typing import Any, Dict, List, Optional
 
 from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 from hyperborea3.monsters import get_all_monsters
 from hyperborea3.player_character import PlayerCharacter
 from hyperborea3.spells import get_all_spells, get_spell
@@ -10,6 +11,15 @@ import rpg_tools.maze_rats.char as maze_rats_char
 
 
 app = FastAPI()
+
+# https://fastapi.tiangolo.com/tutorial/cors/
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    # allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/")
