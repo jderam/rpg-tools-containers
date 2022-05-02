@@ -14,4 +14,4 @@ RUN python -m pip install -r requirements.txt
 RUN python -m pip install git+https://github.com/jderam/rpg_tools.git
 
 # install hyperborea3 from github
-RUN python -m pip install git+https://github.com/jderam/hyperborea3.git
+RUN python -m pip install git+https://github.com/jderam/hyperborea3.git@v0.3.6
