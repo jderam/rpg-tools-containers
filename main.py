@@ -3,8 +3,10 @@ from typing import Any, Dict, List, Optional
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from hyperborea3.monsters import get_all_monsters
+from hyperborea3.namegen import generate_name
 from hyperborea3.player_character import PlayerCharacter
 from hyperborea3.spells import get_all_spells, get_spell
+from hyperborea3.valid_data import VALID_RACES_BY_ID
 import rpg_tools.tiny_dungeon.char as td_char
 import rpg_tools.gamma5.char as gamma5_char
 import rpg_tools.maze_rats.char as maze_rats_char
@@ -73,6 +75,19 @@ async def hyperborea_spell(spell_id: int) -> Dict:
 @app.get("/hyperborea3/monsters/all")
 async def hyperborea_monsters() -> List[Dict[str, Any]]:
     return get_all_monsters()
+
+
+@app.get("/hyperborea3/namegen")
+async def gen_name(
+    race_id: Optional[int] = Query(0),
+    gender: Optional[str] = Query("random"),
+) -> str:
+    return generate_name(race_id=race_id, gender=gender)
+
+
+@app.get("/hyperborea3/races")
+async def race_map() -> Dict[int, str]:
+    return VALID_RACES_BY_ID
 
 
 # ~~~ rpg_tools ~~~
