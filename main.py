@@ -81,8 +81,9 @@ async def hyperborea_monsters() -> List[Dict[str, Any]]:
 async def gen_name(
     race_id: Optional[int] = Query(0),
     gender: Optional[str] = Query("random"),
-) -> str:
-    return generate_name(race_id=race_id, gender=gender)
+) -> Dict[str, str]:
+    name = generate_name(race_id=race_id, gender=gender)
+    return {"name": name}
 
 
 @app.get("/hyperborea3/races")
