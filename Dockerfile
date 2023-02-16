@@ -15,7 +15,7 @@ RUN python -m pip install --upgrade pip wheel
 RUN python -m pip install -r requirements.txt
 
 # install rpg_tools from github
-RUN python -m pip install git+https://github.com/jderam/rpg_tools.git
+RUN python -m pip install git+https://github.com/jderam/rpg_tools.git@v0.1.1
 
 # install hyperborea3 from pypi
 RUN python -m pip install hyperborea3==0.5.4
