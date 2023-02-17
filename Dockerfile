@@ -20,6 +20,6 @@ RUN git clone https://github.com/jderam/rpg_tools.git
 RUN python -m pip install -e rpg_tools
 
 # install hyperborea3 from pypi
-RUN python -m pip install hyperborea3==0.5.4
+RUN python -m pip install hyperborea3==0.6.0
 
 CMD ["python", "-m", "uvicorn", "main:app", "--workers", "2", "--host", "0.0.0.0", "--port", "8000"]
