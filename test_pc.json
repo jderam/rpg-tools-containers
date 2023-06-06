@@ -1,0 +1,705 @@
+{
+    "app_version": "0.6.0",
+    "character_id": "a66d7cec45094abd80d89cc996fa296c",
+    "method": 6,
+    "class_id": 24,
+    "class_name": "Legerdemainist",
+    "attr": {
+        "st": {
+            "score": 18,
+            "atk_mod": 2,
+            "dmg_adj": 3,
+            "test": 5,
+            "feat": 32
+        },
+        "dx": {
+            "score": 18,
+            "atk_mod": 3,
+            "def_adj": 2,
+            "test": 5,
+            "feat": 40
+        },
+        "cn": {
+            "score": 18,
+            "hp_adj": 3,
+            "poison_adj": 2,
+            "trauma_surv": 95,
+            "test": 5,
+            "feat": 32
+        },
+        "in": {
+            "score": 18,
+            "lang": 3,
+            "bonus_spells": 4,
+            "learn_spell": 95
+        },
+        "ws": {
+            "score": 18,
+            "will_adj": 2,
+            "bonus_spells": 4,
+            "learn_spell": 95
+        },
+        "ch": {
+            "score": 18,
+            "react_adj": 3,
+            "max_henchmen": 12,
+            "turn_adj": 1
+        }
+    },
+    "xp": 9999999,
+    "level": 12,
+    "xp_to_next": 960000,
+    "xp_bonus": true,
+    "race_id": 14,
+    "race": "Carolingian Frank",
+    "gender": "Non-Binary",
+    "name": "Dubnovellaunos nepos Dubnovellauni",
+    "age": 120,
+    "height": "5'10\"",
+    "weight": "250 lbs.",
+    "eye_colour": "Green, Emerald",
+    "hair_colour": "Red-Orange, Medium",
+    "complexion": "Medium brown",
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "languages": [
+        "Common",
+        "Keltic (Goidelic dialect)",
+        "Hellenic (Amazon dialect)",
+        "Keltic (Pictish dialect)",
+        "Old Norse (Anglo-Saxon dialect)"
+    ],
+    "deity": {
+        "deity_id": 16,
+        "deity_name": "Tlakk-Nakka",
+        "primary_alignment": "Neutral"
+    },
+    "secondary_skill": "leatherworker/saddler/tanner",
+    "hd": "9d6+36",
+    "hp": 199,
+    "fa": 12,
+    "ca": 12,
+    "ta": 12,
+    "sv": 11,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 2,
+        "sorcery": 2
+    },
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 13,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": {
+        "shield_id": 1,
+        "shield_type": "Small Shield",
+        "def_mod": 1,
+        "cost": 5,
+        "weight": 5
+    },
+    "ac": 15,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 2,
+            "atk_rate": "1/1",
+            "melee_atk": 8,
+            "hurled_atk": 9,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 110,
+            "weapon_type": "Falcata",
+            "wc": 1,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 10,
+            "weight": 3,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 8,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 216,
+            "weapon_type": "Sling",
+            "rof": "1/1",
+            "range_sml": "50/100/150",
+            "damage": "1d4",
+            "hurled": false,
+            "launched": true,
+            "cost": 2,
+            "weight": 1,
+            "qty": 1,
+            "ammunition": "bullets ×20",
+            "missile_atk": 9,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "ink and quill",
+        "parchment",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "small sack",
+        "thieves’ tools",
+        "tinderbox",
+        "torches ×2",
+        "wineskin (full)",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 5,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 10,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "decipher_script",
+            "skill_name": "Decipher Script",
+            "skill_roll": 6,
+            "stat": "in"
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 9,
+            "stat": "ws"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 10,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 8,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 10,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 8,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "pick_pockets",
+            "skill_name": "Pick Pockets",
+            "skill_roll": 9,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": {
+        "mag": {
+            "spells_per_day": {
+                "lvl1": 4,
+                "lvl2": 4,
+                "lvl3": 4,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to sense the presence of magic items or other dweomered persons, places, or things (e.g., an enchanted treasure chest, a <i>sorcerer locked</i> door). The dweomered items will glow before the eyes of the caster in a path of detection 60 feet long and 10 feet wide. From a stationary position the caster can slowly rotate, covering 360° before the spell ends. <i>Detect magic</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead always masks the presence of magic.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 453,
+                    "spell_name": "Write Spell",
+                    "range": "0",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Allows the sorcerer to transfer a spell from one spell book to another. The caster need not comprehend the spell being transferred, but it must be a spell from the sorcerer’s respective spell list. Once a spell is transferred, it disappears from its original volume. Completing this spell requires 6 turns (1 hour) per spell level and necessitates sorcerer’s ink (such as sepia), a fine quill, and a crushed gem of 100-gp value or greater. Upon completing the transfer, the sorcerer must make a <i>sorcery</i> saving throw or suffer 1d4 hp damage and be knocked unconscious for 1d4 turns. If the sorcerer is disrupted whilst performing this ritual, the transferred spell will be lost, ruined.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 53,
+                    "spell_name": "Charm Person",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 183,
+                    "spell_desc": "<p>The target of this spell (human, humanoid, or giant) must make a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. If the save fails, the victim views the caster as a close and trusted comrade to be protected and defended for the duration of the spell. If the ensorcelled victim understands the caster’s language, the caster can “suggest” the victim perform various tasks, so long as they are not diametrically opposite to the victim’s nature.</p> <p>The spell <i>dispel magic</i> can cancel this spell. Otherwise, additional <i>sorcery</i> saving throws (<i>willpower adjustment</i> applies) are allowed to break the spell at a time predicated on the targets intelligence (IN) score.:</p> <ul><li>13–18 IN = new save every 6 turns</li> <li>9–12 IN = new save every 24 hours</li> <li>3–8 IN = new save once per week</li></ul>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 78,
+                    "spell_name": "Cool Metal",
+                    "range": "30 feet",
+                    "duration": "9 rounds",
+                    "reversible": false,
+                    "pp": 187,
+                    "spell_desc": "<p>Freezes metallic objects to blistering temperatures. For every CA level of the sorcerer, as much as five square feet of metal can be affected, equivalent to one Small creature per CA level, or one Medium creature per 2 CA levels; e.g., a CA 6 sorcerer can affect three adjacent armoured humans. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a mailclad giant may be considered the equivalent of four fighters). <i>Cool metal</i> is quick to cool, freeze, and then blister; likewise, it is quick to warm. The dweomer persists for 9 rounds, with metal treated thusly if in contact with skin:</p> <ul><li><b>Round 1:</b> Metal becomes <i>cold</i>, uncomfortable to the touch</li> <li><b>Rounds 2–4:</b> Metal <i>freezes</i>, biting for 1d4 hp damage per round</li> <li><b>Round 5:</b> Metal <i>blisters</i> for 2d4 hp damage</li> <li><b>Rounds 6–8:</b> Metal warms to <i>freezing</i>, biting for 1d4 hp damage per round</li> <li><b>Round 9:</b> Metal warms to <i>cold</i></li></ul> <p>Metal affected by <i>blistering cold</i> (round 5 of the spell) is subject to brittleness. If affected normal (nonmagical) armour is struck, it may shatter. The same applies to a normal sword, axe blade, etc. <i>Cold protection</i> and <i>cold resistance</i> negate the harmful effects of this spell.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 320,
+                    "spell_name": "Ray of Enfeeblement",
+                    "range": "30 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 224,
+                    "spell_desc": "<p>From the hand of the caster springs a silvery flash of light that automatically strikes its intended target, sapping the victim of 4 strength points. A <i>sorcery</i> saving throw negates this spell. If a monster is affected, the referee should reduce damage dice: d20 reduced to d12; d12 to d10; d10 to d8; d8 to d6; d6 to d4; d4 to d3; d3 to d2; d2 to 1. Bonuses to damage dice should also be proportionately reduced, so a creature that normally inflicts 1d8+2 hp damage should inflict 1d6+1 hp damage, and so on.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 315,
+                    "spell_name": "Pyrotechnics",
+                    "range": "240 feet",
+                    "duration": "2 rounds per CA level",
+                    "reversible": false,
+                    "pp": 223,
+                    "spell_desc": "<p>Uses an existing flame (e.g., brazier, campfire, torch) to create a great, fiery spectacle of flashing colours and luminous lights. Alternatively, a thick, rolling smoke can be produced, clouding a 20-foot-diameter area around the blaze. Once created, the <i>pyrotechnics</i> persist until the spell duration is met or the source is extinguished.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 248,
+                    "spell_name": "Magic Mouth",
+                    "range": "10 feet",
+                    "duration": "permanent (until triggered)",
+                    "reversible": false,
+                    "pp": 212,
+                    "spell_desc": "<p>Once activated, this enchantment causes a two-footwide illusory mouth to manifest. The <i>magic mouth</i> appears where the caster places the spell. It might be triggered by movement within 10 feet of it, or by other conditions as the caster prescribes, though the trigger range can be no greater than 10 feet. (For instance, placed upon a door, the <i>magic mouth</i> might only appear if the door is rapped on.)</p> <p>Once triggered, the <i>magic mouth</i> speaks a message that may not exceed 25 words. It might speak in a sibilant tongue, a commanding tone, a kind voice, or any like variation, though only in a language known by the caster. <i>Dispel magic</i> terminates this enchantment.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 44,
+                    "spell_name": "Cataleptic State",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) + 6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 181,
+                    "spell_desc": "<p>This spell allows the caster to feign death in a way indistinguishable from actual mortification. The sorcerer’s invisible spirit can float up to six feet above their “dead” physical body. The caster can see, hear, smell, and perceive surrounding events; meanwhile, no pulse is discernible on the cataleptic body, no breath appears to be drawn, and flesh is cold to the touch. One can willingly emerge from the <i>cataleptic state</i> at any time but needs 1 full turn before being able to walk and talk as normal.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 425,
+                    "spell_name": "Twofold Missile",
+                    "range": "touch",
+                    "duration": "3 rounds",
+                    "reversible": false,
+                    "pp": 243,
+                    "spell_desc": "<p>The sorcerer must touch a personal missile launcher to lay this dweomer (usually a bow, crossbow, or sling; siege weapons do not qualify). On the next round, the missile launcher will shoot <i>twofold missiles</i>; i.e., when a missile is fired, sorcery causes the missile to split into two identical missiles. Only one attack roll is made per <i>twofold missile</i>: A hit indicates both missiles strike; a miss indicates both missiles fail to connect. This spell will duplicate a magically enchanted missile (e.g., a <b>+1 arrow</b> will become two <b>+1 arrows</b>), but in all cases, only one missile can possibly be recovered, the duplicate disappearing.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 225,
+                    "spell_name": "Infrared Vision",
+                    "range": "touch",
+                    "duration": "2 hours + 1 hour per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>The caster or other recipient can perceive light in the infrared spectrum, effectively seeing in the dark to a range of 60 feet. All subtle differences of heat radiation are defined before the eyes of the recipient so that a warm-blooded creature stands out against the cool walls of a dungeon chamber. Fire or other notable heat in the proximity of the viewer can be a hindrance (e.g., lantern, torch) or a complete obstruction (e.g., bonfire, lava). This spell does not reveal invisible objects or creatures.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 163,
+                    "spell_name": "Flame Arrow",
+                    "range": "touch",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 198,
+                    "spell_desc": "<p>Enchants one arrow or crossbow bolt per round for as many rounds as the sorcerer has CA levels. The caster must touch each missile, which then must be fired (presumably by an ally) within 1 round of the sorcerer’s touch. Once a <i>flame arrow</i> is launched, it ignites, causing an extra 1d6 hp fire damage if it strikes its intended target. Each enchanted missile is considered a magical weapon, though it has no attack bonus.</p>"
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Agile",
+            "brief_desc": "+1 AC when unarmoured",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Backstab",
+            "brief_desc": "+4 to hit, damage multiplied",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Detect Secret Doors",
+            "brief_desc": "3:6 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of DX",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke magician scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast magician spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 1,
+            "ability_title": "Thieves' Cant",
+            "brief_desc": "secret language of thieves",
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 8,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 9,
+            "ability_title": "Lordship",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 24,
+            "level": 12,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}
