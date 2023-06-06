@@ -1,3 +1,4 @@
+import json
 from typing import Any, Dict, List, Optional
 
 from fastapi import FastAPI, Query
@@ -60,6 +61,12 @@ async def specific_class(
         ac_type=ac_type,
     )
     return pc.to_dict()
+
+
+@app.get("/hyperborea3/testpc")
+async def test_pc() -> Dict:
+    with open("test_pc.json", "r") as f:
+        return json.load(f)
 
 
 @app.get("/hyperborea3/spells/all")
