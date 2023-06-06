@@ -6,7 +6,7 @@ OS := $(shell uname)
 
 
 gen_requirements_txt: ## Generate a new requirements.txt file
-	pip-compile requirements.in > requirements.txt
+	pip-compile --resolver=backtracking --upgrade requirements.in > requirements.txt
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
 	uvicorn main:app --reload
