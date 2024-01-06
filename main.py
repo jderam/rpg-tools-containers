@@ -8,6 +8,7 @@ from hyperborea3.namegen import generate_name
 from hyperborea3.player_character import PlayerCharacter
 from hyperborea3.spells import get_all_spells, get_spell
 from hyperborea3.valid_data import VALID_RACES_BY_ID
+import rpg_tools.d666.char as d666_char
 import rpg_tools.tiny_dungeon.char as td_char
 import rpg_tools.gamma5.char as gamma5_char
 import rpg_tools.maze_rats.char as maze_rats_char
@@ -117,3 +118,10 @@ async def gamma5_character():
 @app.get("/rpg-tools/maze-rats")
 async def maze_rats_character():
     return maze_rats_char.PlayerCharacter().to_dict()
+
+
+@app.get("/rpg-tools/d666")
+async def d666_character(
+    level: Optional[int] = Query(1),
+) -> Dict[str, Any]:
+    return d666_char.PlayerCharacter(level=level).to_dict()
