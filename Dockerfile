@@ -1,4 +1,4 @@
-FROM python:3.11-slim-bullseye
+FROM python:3.11-slim-bookworm
 
 RUN apt-get update
 RUN apt-get install git -y
@@ -12,7 +12,7 @@ COPY requirements.txt .
 COPY test_pc.json .
 COPY main.py .
 
-RUN python -m pip install --upgrade pip
+RUN python -m pip install --upgrade pip setuptools wheel
 RUN python -m pip install -r requirements.txt
 
 # install rpg_tools from github
