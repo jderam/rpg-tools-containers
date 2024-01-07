@@ -1,4 +1,5 @@
 import json
+import random
 from typing import Any, Dict, List, Optional
 
 from fastapi import FastAPI, Query
@@ -9,9 +10,13 @@ from hyperborea3.player_character import PlayerCharacter
 from hyperborea3.spells import get_all_spells, get_spell
 from hyperborea3.valid_data import VALID_RACES_BY_ID
 import rpg_tools.d666.char as d666_char
-import rpg_tools.tiny_dungeon.char as td_char
 import rpg_tools.gamma5.char as gamma5_char
 import rpg_tools.maze_rats.char as maze_rats_char
+from rpg_tools.misc_data.zothique_names import (
+    FEMALE_NAMES as ZOTHIQUE_FEMALE_NAMES,
+    MALE_NAMES as ZOTHIQUE_MALE_NAMES,
+)
+import rpg_tools.tiny_dungeon.char as td_char
 
 
 app = FastAPI()
@@ -125,3 +130,15 @@ async def d666_character(
     level: Optional[int] = Query(1),
 ) -> Dict[str, Any]:
     return d666_char.D666Character(level=level).to_dict()
+
+
+@app.get("/rpg-tools/zothique-names")
+async def zothique_names(
+    gender: Optional[str] = Query("any"),
+) -> str:
+    if gender.lower() == "female":
+        return random.choice(ZOTHIQUE_FEMALE_NAMES)
+    elif gender.lower() == "male":
+        return random.choice(ZOTHIQUE_MALE_NAMES)
+    else:
+        return random.choice(ZOTHIQUE_FEMALE_NAMES + ZOTHIQUE_MALE_NAMES)
