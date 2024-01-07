@@ -124,4 +124,4 @@ async def maze_rats_character():
 async def d666_character(
     level: Optional[int] = Query(1),
 ) -> Dict[str, Any]:
-    return d666_char.PlayerCharacter(level=level).to_dict()
+    return d666_char.D666Character(level=level).to_dict()
