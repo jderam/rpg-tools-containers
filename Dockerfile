@@ -27,6 +27,8 @@ RUN python -m pip install hyperborea3==0.6.0
 RUN python -m pip install tiny-dungeon
 
 # install d666 from pypi
-RUN python -m pip install d666-rpg-system
+# RUN python -m pip install d666-rpg-system
+RUN git clone https://github.com/jderam/FREEd6.git
+RUN python -m pip install -e FREEd6
 
 CMD ["python", "-m", "uvicorn", "main:app", "--workers", "4", "--host", "0.0.0.0", "--port", "8000"]
