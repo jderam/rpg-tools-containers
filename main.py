@@ -17,7 +17,7 @@ from rpg_tools.misc_data.zothique_names import (
     MALE_NAMES as ZOTHIQUE_MALE_NAMES,
 )
 
-from d666_rpg_system.char import D666Character
+from free_d6.char import Character
 from tiny_dungeon.char import TinyDungeonPC
 
 
@@ -127,11 +127,11 @@ async def maze_rats_character():
     return maze_rats_char.PlayerCharacter().to_dict()
 
 
-@app.get("/d666/char")
-async def d666_character(
+@app.get("/free_d6/char")
+async def free_d6_character(
     level: Optional[int] = Query(1),
 ) -> Dict[str, Any]:
-    return D666Character(level=level).as_dict()
+    return Character(level=level).as_dict()
 
 
 @app.get("/rpg-tools/zothique-names")
