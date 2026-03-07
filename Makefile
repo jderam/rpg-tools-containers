@@ -2,7 +2,7 @@ SHELL := bash
 .DEFAULT_GOAL := help
 OS := $(shell uname)
 
-.PHONY: help build run deploy stop test format update_requirements
+.PHONY: help create_venv update_requirements run_test_uvicorn d_build d_run d_build_and_run d_stop
 
 
 create_venv: ## Create a Python 3.14 virtual environment
