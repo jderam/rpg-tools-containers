@@ -1,4 +1,4 @@
-FROM python:3.13-slim-trixie
+FROM ghcr.io/astral-sh/uv:0.10.9-python3.14-trixie-slim
 
 RUN apt-get update
 RUN apt-get install git -y
@@ -12,23 +12,20 @@ COPY requirements.txt .
 COPY test_pc.json .
 COPY main.py .
 
-RUN python -m pip install --upgrade pip setuptools wheel
-RUN python -m pip install -r requirements.txt
+RUN uv venv --python 3.14
+RUN uv pip install -r requirements.txt
 
 # install rpg_tools from github
-# RUN python -m pip install git+https://github.com/jderam/rpg_tools.git@v0.1.1
 RUN git clone https://github.com/jderam/rpg_tools.git
-RUN python -m pip install -e rpg_tools
+RUN uv pip install -e rpg_tools
 
 # install hyperborea3 from pypi
-RUN python -m pip install hyperborea3==0.6.0
+RUN uv pip install hyperborea3
 
 # install tiny dungeon from pypi
-RUN python -m pip install tiny-dungeon
+RUN uv pip install tiny-dungeon
 
-# install d666 from pypi
-# RUN python -m pip install d666-rpg-system
-RUN git clone https://github.com/jderam/FREEd6.git
-RUN python -m pip install -e FREEd6
+# install free-d6 from pypi
+RUN uv pip install free-d6
 
-CMD ["python", "-m", "uvicorn", "main:app", "--workers", "4", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uv", "run", "uvicorn", "main:app", "--workers", "4", "--host", "0.0.0.0", "--port", "8000"]
