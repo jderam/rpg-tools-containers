@@ -2,15 +2,17 @@ SHELL := bash
 .DEFAULT_GOAL := help
 OS := $(shell uname)
 
-.PHONY: help build run deploy stop test format gen-requirements
+.PHONY: help build run deploy stop test format update_requirements
 
 
-gen_requirements_txt: ## Generate a new requirements.txt file
-	python -m pip install --upgrade pip-tools
-	pip-compile --upgrade requirements.in > requirements.txt
+create_venv: ## Create a Python 3.14 virtual environment
+	uv venv --python 3.14
+
+update_requirements: ## Generate a new requirements.txt file
+	uv pip compile --upgrade requirements.in -o requirements.txt
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
-	uvicorn main:app --reload
+	uv run uvicorn main:app --reload
 
 d_build: ## Build the docker container
 	# docker rm rpg-tools
